@@ -10,7 +10,8 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          git clone --depth 1 https://github.com/quictls/quictls.git
+          #git clone --depth 1 https://github.com/quictls/quictls.git
+          git clone -b cmake-doc-install https://github.com/quictls/quictls quictls
           cd quictls
           cmake . 
           make
